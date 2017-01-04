@@ -43,12 +43,28 @@ table {
 
 /*	RESET 	*/
 
+h1{
+	font-size: 3em;
+	font-family: Impact, sans-serif;
+}
+
 html, *, *:after, *:before{
 	box-sizing: border-box;
 }
 
 body{
 	background-color: gray;
+}
+
+
+.background-theme{
+	background-color: rgba(0,0,0,0.3);
+	border: 1px #ccc solid;
+	border-radius: 5px;
+	max-width: 1000px;
+	width: 100%;
+	color: white;
+
 }
 
 div.container{
@@ -61,18 +77,40 @@ div.container a{
 	text-decoration: none;	
 }
 
-nav.navigation-bar{
+.flex-centralized{
 	display: flex;
-	margin: 50px;
+	margin: 5px;
 	justify-content: center;
 }
 
-nav.navigation-bar > ul{
-	background-color: rgba(0,0,0,0.3);
-	border: 1px #ccc solid;
-	border-radius: 5px;
-	width: 100%;
-	max-width: 1000px;
+.image-container img{
+	height: 300px;
+}
+
+.form-area > form.background-theme{
+	display: flex;
+	justify-content: center;
+}
+
+.main-text-content{
+	text-align: left;
+}
+
+.main-text-content p{
+	padding: 10px;
+	font-family: sans-serif;
+} 
+
+.form-area > form.background-theme, footer > p {
+	padding: 20px;
+}
+
+.form-area > form.background-theme > input{
+	padding: 9px;
+	font-weight: bold;
+}
+
+nav.navigation-bar > ul{	
 	display: flex;
 }
 
@@ -110,4 +148,8 @@ nav.navigation-bar > ul > li:nth-child(2){
 	nav.navigation-bar > ul > li {
 		flex: 1 1 100%;
 	}
+
+	.form-area > form.background-theme{
+		flex-direction: column;
+	}	
 }

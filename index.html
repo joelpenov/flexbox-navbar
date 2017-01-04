@@ -7,8 +7,11 @@
 </head>
 <body>
 	<div class="container">
-		<nav class="navigation-bar">
-			<ul>
+		<header class="flex-centralized">
+			<h1 class="background-theme"><a href="#">What's  Flex Box?</a></h1>
+		</header>
+		<nav class="navigation-bar flex-centralized">
+			<ul class="background-theme">
 				<li><a href="#">Services</a></li>
 				<li><a href="#">Home</a></li>
 				<li><a href="#">Products</a></li>
@@ -39,6 +42,34 @@
 
 			</ul>
 		</nav>
+		<section class="image-container">
+			<img src="img/8.jpg" class="background-theme">
+		</section>
+
+		<section class="main-text-content flex-centralized">
+			<div class="background-theme">
+				<p>
+					This establishes the main-axis, thus defining the direction flex items are placed in the flex container. Flexbox is (aside from optional wrapping) a single-direction layout concept. Think of flex items as primarily laying out either in horizontal rows or vertical columns.
+				</p>
+				<p>
+					This defines the ability for a flex item to grow if necessary. It accepts a unitless value that serves as a proportion. It dictates what amount of the available space inside the flex container the item should take up.
+				</p>
+			</div>
+		</section>
+
+		<section class="form-area flex-centralized">
+			<form class="background-theme">
+				<input type="text" name="username" placeholder="username">
+				<input type="password" name="password" placeholder="password">
+				<input type="submit" name="sendbutton" value="Log in">
+			</form>
+		</section>
+
+		<footer class="flex-centralized">
+			<p class="background-theme">	@ Joel Peña</p>
+		</footer>
+	</div>
+
 	</div>
 </body>
 </html>
